@@ -1,46 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <style>
-        body{
-            align-content: center;
-        }
-        form{
-            background-color: skyblue;
-            align-content: center;
-            text-align: center;
-            border: solid;
-            height: 200px;
-            width: 500px;
-        }
-        label{
-            margin: 30px;
-        }
-        .button{
-            margin-left: 70px;
-        }
-        h1{
-            margin-top: 40px;
-            color: red;
-        }
-    </style>
+<meta charset="ISO-8859-1">
+<title>Train Ticket Registration Form</title>
+<style >
+h1{
+text-align: Center;
+color: brown;
+font-size: 40px;
+font-style: italic;
+text-shadow: 1px 1px #0000ff ;
+}
+#h21
+{
+}
+body {
+background-color: lightblue;
+background-image: url("https://allhdwallpapers.com/wp-content/uploads/2016/04/Train-6.jpg");
+}
+</style>
 </head>
-<body>
-<h1 style="text-align: center;">Employee form</h1>
-<form action="save" modelAttribute="employee">
-    <label>FirstName</label>
-    <input type="text" name="firstName" placeholder="firstName"><br>
-    <label>LastName</label>
-    <input type="text" name="lastName" placeholder="lastName"><br>
-    <label>Email</label>
-    <input type="text" name="emailId" placeholder=" emailid" style="margin-left: 40px;"><br>
-
-
-    <button class="button">Submit</button>
+<body >
+<h1> Travel reservation form </h1>
+<h2><i>Book Ticket</i></h2>
+<form action="">
+</label>
+<select>
+<option value="from">from</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Pune">Pune</option>
+<option value="Kerala">Kerala</option>
+<option value="Delhi">Delhi</option>
+</select>
+&ensp;
+<label>
+To
+</label>
+<select>
+<option value="To">To</option>
+<option value="Hyderabad">Hyderabad</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Pune">Pune</option>
+<option value="Kerala">Kerala</option>
+<option value="Delhi">Delhi</option>
+</select>
+<br><br>
+[1:02 PM] Hemanth Punna
+Date : <input type = "date">
+<button type="submit" name="btn">Submit</button>
+<br>
+<br>
+<h2 id="h21"> <i>Passenger Details</i> </h2>
+<label>Fisrt Name </label>
+<input type="text" name="firstname" size="15"/> <br> <br>
+<label> Last Name: </label>
+<input type="text" name="lastname" size="15"/> <br> <br>
+Gender :
+</label>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="other" value="other"> other
+<br>
+<br>
+<label>
+Mobile Number :
+</label>
+<input type="text" name="phone" size="10"/> <br> <br>
+Email:
+<input type="email" id="email" name="email"/> <br><br>
+<label>
 </form>
+<button type="Add Passenger" form="form1" value="Add Passenger">Add Passenger</button>
+<button type="submit" form="form1" value="Submit">Submit</button>
 </body>
 </html>
+
